@@ -1,35 +1,166 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#74e8f3f6"
+    android:background="#00e8f3f6"
     android:padding="@dimen/widget_margin">
 
-    <Button
-        android:text="Hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/hello_button"
-        android:onClick="sendMessage"
-        android:layout_below="@+id/appwidget_text"
-        android:layout_alignStart="@+id/appwidget_text"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp" />
 
     <TextView
-        android:id="@+id/appwidget_text"
+        android:text="Money Police"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#09C"
-        android:contentDescription="@string/appwidget_text"
-        android:text="@string/appwidget_text"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="108dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/appwidget_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
+    <TextView
+        android:text="0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/amount"
+        android:layout_below="@+id/appwidget_text"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:text="$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/amount"
+        android:layout_alignStart="@+id/appwidget_text"
+        android:layout_marginStart="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_clear"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/amount"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_toEndOf="@+id/appwidget_text"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <Button
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_clear"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/button_100"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <Button
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_1"
+        android:layout_alignBaseline="@+id/button_100"
+        android:layout_alignBottom="@+id/button_100"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <Button
+        android:text="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_50"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/button_100"
+        android:layout_alignBottom="@+id/button_100"
+        android:layout_toStartOf="@+id/appwidget_text"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_10"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/button_20"
+        android:layout_alignBottom="@+id/button_20"
+        android:layout_toStartOf="@+id/button_clear"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:text="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_20"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/button_50"
+        android:layout_alignBottom="@+id/button_50"
+        android:layout_toEndOf="@+id/button_50" />
+
+    <Button
+        android:text="Food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_100"
+        android:layout_alignEnd="@+id/button_50"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/food_button" />
+
+    <Button
+        android:text="Candy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/candy_button"
+        android:layout_below="@+id/food_button"
+        android:layout_alignStart="@+id/food_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill_button"
+        android:text="Bill"
+        android:layout_alignBaseline="@+id/candy_button"
+        android:layout_alignBottom="@+id/candy_button"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:text="Grocery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grocery_button"
+        android:layout_alignBaseline="@+id/food_button"
+        android:layout_alignBottom="@+id/food_button"
+        android:layout_alignStart="@+id/bill_button" />
+
+    <Button
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_5"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/button_10"
+        android:layout_alignBottom="@+id/button_10"
+        android:layout_toEndOf="@+id/button_10" />
+
+    <Button
+        android:text="Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other_button"
+        android:layout_alignBaseline="@+id/bill_button"
+        android:layout_alignBottom="@+id/bill_button"
+        android:layout_alignStart="@+id/button_clear" />
+
+    <Button
+        android:text="Fun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fun_button"
+        android:layout_alignBaseline="@+id/grocery_button"
+        android:layout_alignBottom="@+id/grocery_button"
+        android:layout_alignStart="@+id/other_button" />
 
 </RelativeLayout>
