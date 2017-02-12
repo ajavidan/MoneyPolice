@@ -8,3 +8,5 @@
 /captures
 .externalNativeBuild
 server/venv
+server/mp/bw/migrations
+server/mp/bw/__pycache__/*.pyc

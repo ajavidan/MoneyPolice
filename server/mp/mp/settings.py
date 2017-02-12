@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Third party apps
     'compressor',
+    'rest_framework',
 
     #Local Apps
     'bw.apps.BwConfig',

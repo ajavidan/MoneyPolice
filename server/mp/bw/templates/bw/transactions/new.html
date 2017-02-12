@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="new_transaction" class="mp-form-container">
+  <form action="/create_transaction/" method="post">
+    <div class="form-group">
+      <label for="amount">Amount </label>
+      <input id="t_amount" class="form-control" type="decimal" name="t_amount" value="{{ current_amount }}">
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input id="t_category" class="form-control" type="text" name="" value="{{ current_category }}">
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input id="t_type" class="form-control" type="text" name="t_type" value="{{ current_type }}">
+    </div>
+    <div class="form-group">
+      <label for="payer">Payer</label>
+      <input id="t_payer" class="form-control" type="text" name="t_payer" value="{{ current_payer }}">
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Create">
+    </div>
+
+
+</form>
+
+
+</div>
+
+{% endblock %}
