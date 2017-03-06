@@ -12,7 +12,7 @@ router.register(r'transactions', views.TransactionViewSet)
 
 
 urlpatterns = [
-
+    url(r'^$', views.index, name='index'),
     url(r'^', include(router.urls)),
     # url(r'^transactions/recent/(?P<payer>[a-z]+)$', views.recent_by_payer, name='recent_by_payer'),
     # url(r'^transactions/recent/(?P<category>[A-Z]+)$', views.recent_by_category, name='recent_by_category'),
@@ -20,7 +20,8 @@ urlpatterns = [
     # url(r'^transactions/recent$', views.recent_transactions, name='recent_transactions'),
     # url(r'^transactions/all$', views.transactions, name='transactions'),
     # url(r'^transactions/new$', views.new_transaction, name='new_transaction'),
-    url(r'^$', views.index, name='index')
+
+
 
 
 ]

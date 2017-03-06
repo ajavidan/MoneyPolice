@@ -22,10 +22,12 @@ class Fund(models.Model):
 class Payer(models.Model):
     name = models.CharField(max_length=25)
     budget = models.ForeignKey('bw.Budget', null=True)
+    # owner = models.ForeignKey('auth.User', related_name='payerss', on_delete=models.CASCADE)
 
 class Budget(models.Model):
     # list of funds
     name = models.CharField(max_length=25)
+    # owner = models.ForeignKey('auth.User', related_name='budgets', on_delete=models.CASCADE)
 
     def __unicode__(self):
         return '%s' % self.name
