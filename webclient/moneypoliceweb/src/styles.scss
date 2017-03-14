@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+     -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+             border-radius: 0px !important;
+     -webkit-border-top: 0px !important;
+        -moz-border-top: 0px !important;
+             border-top: 0px !important;
+     -webkit-border-bottom: 0px !important;
+        -moz-border-bottom: 0px !important;
+             border-bottom: 0px !important;
+   }
+
+   .btn-primary {
+       background: #8edd2e;
+       color: #ffffff;
+   }
+   .btn-primary:hover {
+       background: #A3FF33;
+       color: #ffffff;
+   }
