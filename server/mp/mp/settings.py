@@ -32,7 +32,7 @@ DEBUG = True
 
 INTERNAL_IPS = ('127.0.0.1')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dejango-env.rdmiqnzdgi.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
