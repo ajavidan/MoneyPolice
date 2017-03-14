@@ -4,6 +4,10 @@
 
 <div>
   <h1> BudgetWathcer Home! </h1>
+
+  {% if budget %}
+    <h2>{{ budget.name }}</h2>
+  {% endif %}
 </div>
 
 {% endblock %}

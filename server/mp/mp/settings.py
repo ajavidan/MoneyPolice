@@ -32,7 +32,7 @@ DEBUG = True
 
 INTERNAL_IPS = ('127.0.0.1')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dejango-env.rdmiqnzdgi.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # Third party apps
     'compressor',
+    'rest_framework',
 
     #Local Apps
     'bw.apps.BwConfig',

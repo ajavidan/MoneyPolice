@@ -1,0 +1,35 @@
+{
+  "Budget": {
+    "funds": {
+      "savings": [
+        {
+          "name": "House Deposit",
+          "limit": 20000
+        },
+        {
+          "name": "Rainy Day",
+          "limit": 5000
+        }
+      ],
+      "spending": [
+        {
+          "name": "Grocery",
+          "limit": 300
+        },
+        {
+          "name": "Restaurant",
+          "limit": 300
+        },
+        {
+          "name": "Recreation",
+          "limit": 120
+        },
+        {
+          "name": "Other",
+          "limit": 100
+        }
+
+      ]
+    }
+  }
+}
